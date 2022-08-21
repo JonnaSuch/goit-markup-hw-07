@@ -24,12 +24,6 @@ img {
   display: block;
   object-fit: cover;
 }
-.list-style-none {
-  list-style: none;
-}
-.decoration-none {
-  text-decoration: none;
-}
 
 a:hover,
 a:focus {
@@ -784,7 +778,7 @@ a:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-item-checkbox {
+.modal-form__checkbox {
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -802,7 +796,7 @@ a:focus {
   transition: border-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input {
+.modal-form__checkbox-input {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -813,7 +807,7 @@ a:focus {
   appearance: none;
   cursor: pointer;
 }
-.checkbox-svg {
+.modal-form__checkbox-svg {
   position: absolute;
   width: 17px;
   height: 16px;
@@ -827,19 +821,20 @@ a:focus {
   transition: opacity 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-text {
+.modal-form__checkbox-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-third);
 }
-.checkbox-input:checked + .checkbox-svg {
+
+.modal-form__checkbox-input:checked + .modal-form__checkbox-svg {
   opacity: 1;
 }
 .form-checkbox:hover {
   border-color: var(--brand-color);
 }
-.button-form {
+.modal-form__button {
   width: 200px;
   height: 50px;
   font-weight: 700;
