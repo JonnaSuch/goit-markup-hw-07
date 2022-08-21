@@ -418,32 +418,32 @@
               </ul>
             </address>
           </section>
-          <section class="social-media-footer">
-            <h4 class="social-media-footer-title">dołącz do nas</h4>
+          <section class="footer-socials">
+            <p class="footer-socials__title">dołącz do nas</p>
             <div>
-              <ul class="social-media-footer-items list-style-none">
-                <li class="social-media-footer-item">
+              <ul class="footer-socials__list">
+                <li class="footer-socials__list-item">
                   <a href="#">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-media-footer-item">
+                <li class="footer-socials__list-item">
                   <a href="#">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-media-footer-item">
+                <li class="footer-socials__list-item">
                   <a href="#">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-media-footer-item">
+                <li class="footer-socials__list-item">
                   <a href="#">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -453,21 +453,27 @@
               </ul>
             </div>
           </section>
-          <section class="footer-newsletter">
-            <form name="newsletter-name" autocomplete="on">
-              <label class="newsletter-label"
-                ><span>Zapisz się do newslettera</span>
+          <section class="newsletter">
+            <form
+              class="newsletter__form"
+              name="newsletter-name"
+              autocomplete="on"
+            >
+              <label
+                ><span class="newsletter__label"
+                  >Zapisz się do newslettera</span
+                >
                 <input
-                  class="newsletter-input"
+                  class="newsletter__input"
                   type="email"
                   name="email"
                   placeholder="E-mail"
                   required
                 />
               </label>
-              <button class="newsletter-button" type="submit">
-                <span>Zapisz się</span>
-                <svg width="24" height="24">
+              <button class="newsletter__button" type="submit">
+                <span class="newsletter__button-span">Zapisz się</span>
+                <svg class="newsletter__button-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
@@ -477,96 +483,94 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
-        <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>
-        <div class="modal-form">
-          <form name="modal-form">
-            <ul class="list-style-none">
-              <li class="form-item">
-                <label class="form-label">
-                  <span class="form-span">Imię</span>
-                </label>
-                <svg class="input-icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                </svg>
+      <div class="backdrop__modal">
+        <button type="button" class="backdrop__close" data-modal-close>
+          X
+        </button>
+        <h2 class="backdrop__title">Zostaw swoje dane w formularzu poniżej</h2>
+        <form name="modal-form">
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <label class="modal-form__label">
+                <span class="modal-form__span">Imię</span>
+              </label>
+              <svg class="modal-form__icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input
+                class="input-box"
+                type="text"
+                id="modal-username"
+                name="username"
+                required
+              />
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__label">
+                <span class="modal-form__span">Telefon</span>
+              </label>
+              <svg class="modal-form__icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <input
+                class="input-box"
+                type="tel"
+                id="modal-phone-number"
+                name="phone_number"
+                required
+              />
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__label">
+                <span class="modal-form__span">Email</span>
+              </label>
+              <svg class="modal-form__icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input
+                class="input-box"
+                type="email"
+                id="modal-email"
+                name="email"
+                required
+              />
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__label">
+                <span class="modal-form__span">Komentarz</span>
+              </label>
+              <textarea
+                class="input-box"
+                id="modal-comment"
+                placeholder="Wprowadź tekst"
+                name="comment"
+                maxlength="120"
+                required
+              ></textarea>
+            </li>
+            <li class="form-item-checkbox">
+              <div class="form-checkbox">
                 <input
-                  class="input-box"
-                  type="text"
-                  id="modal-username"
-                  name="username"
-                  required
+                  class="checkbox-input"
+                  id="checbox"
+                  type="checkbox"
+                  name="checkbox"
                 />
-              </li>
-              <li class="form-item">
-                <label class="form-label">
-                  <span class="form-span">Telefon</span>
-                </label>
-                <svg class="input-icon" width="13" height="13">
-                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                <svg class="checkbox-svg" width="11" height="8">
+                  <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
-                <input
-                  class="input-box"
-                  type="tel"
-                  id="modal-phone-number"
-                  name="phone_number"
-                  required
-                />
-              </li>
-              <li class="form-item">
-                <label class="form-label">
-                  <span class="form-span">Email</span>
-                </label>
-                <svg class="input-icon" width="15" height="12">
-                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-                <input
-                  class="input-box"
-                  type="email"
-                  id="modal-email"
-                  name="email"
-                  required
-                />
-              </li>
-              <li class="form-item">
-                <label class="form-label">
-                  <span class="form-span">Komentarz</span>
-                </label>
-                <textarea
-                  class="input-box"
-                  id="modal-comment"
-                  placeholder="Wprowadź tekst"
-                  name="comment"
-                  maxlength="120"
-                  required
-                ></textarea>
-              </li>
-              <li class="form-item-checkbox">
-                <div class="form-checkbox">
-                  <input
-                    class="checkbox-input"
-                    id="checbox"
-                    type="checkbox"
-                    name="checkbox"
-                  />
-                  <svg class="checkbox-svg" width="11" height="8">
-                    <use href="./images/icons.svg#icon-icon-check"></use>
-                  </svg>
-                </div>
-                <label class="form-label">
-                  <span class="checkbox-text"
-                    >Oświadczam, iż akceptuję
-                    <a class="blue-text" href="">Regulamin</a> i
-                    <a class="blue-text" href=""
-                      >Politykę Prywatności.
-                    </a></span
-                  >
-                </label>
-              </li>
-              <li><button class="button-form" type="submit">Wyślij</button></li>
-            </ul>
-          </form>
-        </div>
+              </div>
+              <label class="modal-form__label">
+                <span class="checkbox-text"
+                  >Oświadczam, iż akceptuję
+                  <a class="blue-text" href="">Regulamin</a> i
+                  <a class="blue-text" href="">Politykę Prywatności. </a></span
+                >
+              </label>
+            </li>
+            <li><button class="button-form" type="submit">Wyślij</button></li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
